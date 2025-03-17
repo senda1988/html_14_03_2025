@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #205781;
+    --second-color: #4F959D;
+    --third-color: #98D2C0;
+    --bg-color: #FDFBEE;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--second-color);
+}
+
+ul :first-child::before {
+    content: "🍕";
+
+}
+
+ul :nth-child(2)::before {
+    content: "🍝";
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol li,
+ul li {
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+ol li::first-letter,
+ul li::first-letter {
+    font-size: 22px;
+    color: #FE4F2D;
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition: transform ease 0.5s;
+}
+
+legend {
+    color: gray;
+}
+
+fieldset {
+    border: 1px solid var(--primary-color);
+}
+
+
+th {
+    background-color: var(--second-color);
+    padding: 5px;
+}
+
+td {
+    pad: 5px;
+}
+
+input,
+select {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+input[name="geschlecht"] {
+    flex: 1;
+}
+
+input[type="submit"] {
+    color: white;
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+
+}
+
+input[type="submit"]:hover {
+    color: var(--primary-color);
+    background-color: var(--second-color);
+
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    background-color: rgb(162, 159, 159);
+    border: 1px solid white;
+    color: white;
+
+}
