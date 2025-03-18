@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>HTML-Tags</title>
 </head>
 
@@ -36,7 +37,7 @@
     <audio src="audio.mp3" controls></audio>
     <hr>
     <h2> Tabellen</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>A</th>
             <th>B</th>
@@ -47,6 +48,11 @@
             <td>2</td>
             <td>3</td>
         </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
     </table>
     <hr>
     <h2>Formulare</h2>
@@ -54,15 +60,15 @@
         <fieldset>
             <legend>Informations</legend>
             <label for="fullName">Name & Vorname</label>
-            <input id="fullName" type="text" name="Senda Zidi"><br />
+            <input id="fullName" type="text" placeholder="Vorname&Lastname"><br />
             <label for="ageId">Age</label>
-            <input id="ageId" type="number"><br />
+            <input id="ageId" type="number" value="0"><br />
             <label for="weiblich">Geschlecht:</label>
-            <br>
+
 
             <label for="weiblich">Weiblich</label>
             <input name="geschlecht" id="weiblich" type="radio" value="weiblich">
-            <br>
+
 
             <label for="mann">Männlich</label>
             <input name="geschlecht" id="mann" type="radio" value="maennlich"><br />
@@ -71,8 +77,8 @@
                 <option>Frankreich</option>
                 <option>Espagne</option>
                 <option>Holland</option>
-            </select>
-
+            </select><br>
+            <input type="submit" />
         </fieldset>
 
     </form>
